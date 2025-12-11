@@ -21,10 +21,9 @@
 	box-sizing: border-box;
  }
 
-
 html {
-	background-image: url("../images/bgimage.jpg");
-	font-family: Audiowide;
+	background-image: url("../images/background.jpg");
+	font-family: 'Trebuchet MS';
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right top;
@@ -35,9 +34,9 @@ html {
 	text-align: center;
 }
 
-a {
+a:not(nav#top) {
 	color: rgb(120, 200, 255);
-	transition: color 0.6s ease-out, font-size 0.3s ease-out, opacity 0.1s ease-out;
+	transition: color 0.6s ease-out, font-size 0.4s ease-out, opacity 0.1s ease-out;
 }
 
 a#imglink:hover {
@@ -69,7 +68,6 @@ nav#top {
 	word-spacing: 20px;
 	text-align: center;
 	width: auto;
-	vertical-align: baseline;
 	-webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -117,7 +115,6 @@ nav#top:hover a:hover {
 
 
 /* ============================================================ Image Styles ============================================================ */
-
 .logo {
 	max-width: 95%;
 	opacity: 100%;
@@ -127,17 +124,12 @@ nav#top:hover a:hover {
 	object-fit: scale-down;
 }
 
-.flag {
-	border-radius: 3px;
-	height: 1em;
+.width {
+	max-width: 100%;
 }
 
 
-
-
-
 /* ============================================================ box styles ============================================================ */
-
 #gray {
 	background: rgba(10, 10, 10, 0.6);
 	transition: 0.2s ease;
@@ -148,7 +140,6 @@ nav#top:hover a:hover {
 	margin-right: auto;
 	margin-bottom: 15px;
 }
-
 
 #graynohover {
 	background: rgba(10, 10, 10, 0.6);
@@ -195,7 +186,6 @@ nav#top:hover a:hover {
 	-webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-	font-family: Audiowide;
 }
 
 #graybtn:hover {
@@ -222,8 +212,8 @@ nav#top:hover a:hover {
 
 
 
-
 /* ============================================================ Text Styles ============================================================ */
+
 .title {
     align-content: center;
     text-align: center;
@@ -234,15 +224,12 @@ nav#top:hover a:hover {
     user-select: none;
     max-height: 500px;
     object-fit: scale-down;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 20px;
 }
 
-.head {
-	text-align: left;
-	font-size: 4em;
-	width: auto;
-	-webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.heading {
+	font-family: Audiowide;
 }
 
 .subhead{
@@ -278,6 +265,10 @@ address {
 
 /* ============================================================ div styles ============================================================ */
 
+.banner {
+	height: 1000px;
+	align-content: center;
+}
 
 .leftside {
 	float: left;
